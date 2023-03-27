@@ -18,4 +18,4 @@ var numero = 1;
 
 var resultado = numero === 1 ? "Sí, soy un uno" : "No, no soy uno"; 
 
-console.log(resultado)
+console.log(resultado);
