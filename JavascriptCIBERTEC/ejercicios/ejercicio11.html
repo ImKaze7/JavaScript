@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+	Caso1
+	Declarar un arreglo vacio, y cargarlo de forma dinámica solicitando al usuario nombres de forma consecutiva, hasta que escribimos "ESC". Luego, recorrer el arreglo para mostrar su contenido.
+	*/
+		//Arreglo vacío
+		let entrada=prompt("Escriba su Nombre");
+		let alumnos=[];
+
+		while(entrada!="ESC"){
+			alumnos.push(entrada);
+			entrada=prompt("Escriba su Nombre:");
+
+		}
+		for(let alumno of alumnos){
+			document.write(alumno+"<hr>");
+		}
+
+	</script>
+	
+</body>
+</html>
