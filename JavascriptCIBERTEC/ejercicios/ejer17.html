@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.textoCiudad{
+			font-family: Arial;
+			font-size: 30px;
+			color: #3498DB ;
+			margin: 3px;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Crear Elementos</h1>
+<script type="text/javascript">
+	let ciudad=["Lima", "Ica", "Arequipa"]
+	for(let ciudad of ciudades){
+		let titulo2=document.createElement('p');
+		titulo2.innerHTML = ciudad;
+		document.body.appendChild(titulo2)
+		titulo2.className="textoCiudad"
+	}
+</script>
+</body>
+</html>

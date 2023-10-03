@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.textoCiudad{
+			font-family: Arial;
+			font-size: 30px;
+			color: #3498DB ;
+			margin: 3px;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+
+<h1>Crear Elementos - Continuación</h1>
+
+
+<li>Contenido1</li>
+
+<script>
+
+//Crear un Arreglo Vacio
+
+let tareas = [];
+
+
+
+for(let i=0;i<5;i++){
+
+
+
+	tareas.push(prompt('Ingresa una Actividad: '));
+
+}
+
+
+
+//Crear una etiqueta UL
+
+let listaTareas = document.createElement('ul');
+
+let conteTareas = "";
+
+
+
+for(let tarea of tareas){
+
+	//<li>Contenido1</li>
+
+	conteTareas+="<li>"+tarea+"</li>";
+
+
+
+}
+
+//Agregar el contenido al UL
+
+listaTareas.innerHTML = conteTareas;
+
+
+
+//Anexar el elemento hijo al Padre
+
+document.body.appendChild(listaTareas);
+
+
+
+
+
+</script>
+</body>
+</html>
